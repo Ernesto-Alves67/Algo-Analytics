@@ -176,8 +176,9 @@ public:
         return vizuGrafo.str(); // Retorna a string construída
     }
 
-
-
 };
+
+/// ------------------------------ Definição da estrutura Heap Tree
+class HeapTree{};
 
 #endif // DATASTRUCT_H
