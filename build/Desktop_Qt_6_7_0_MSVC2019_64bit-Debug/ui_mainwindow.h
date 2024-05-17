@@ -87,7 +87,7 @@ public:
         MainWindow->resize(687, 469);
         MainWindow->setMinimumSize(QSize(600, 300));
         MainWindow->setMaximumSize(QSize(16777215, 16777215));
-        MainWindow->setStyleSheet(QString::fromUtf8("background-color: rgb(77, 86, 166);"));
+        MainWindow->setStyleSheet(QString::fromUtf8("background-color: rgb(154, 154, 154);"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName("centralWidget");
         centralWidget->setMaximumSize(QSize(16777215, 16777215));
@@ -99,9 +99,8 @@ public:
         verticalLayout->setContentsMargins(0, -1, 0, 0);
         fr_entries = new QFrame(centralWidget);
         fr_entries->setObjectName("fr_entries");
-        fr_entries->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
-"background-color: rgb(15, 15, 15);\n"
-"border-radius:10px;"));
+        fr_entries->setStyleSheet(QString::fromUtf8("border-radius:10px;\n"
+""));
         fr_entries->setFrameShape(QFrame::NoFrame);
         verticalLayout_6 = new QVBoxLayout(fr_entries);
         verticalLayout_6->setSpacing(6);
@@ -109,11 +108,11 @@ public:
         verticalLayout_6->setObjectName("verticalLayout_6");
         frame_4 = new QFrame(fr_entries);
         frame_4->setObjectName("frame_4");
-        frame_4->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);"));
+        frame_4->setStyleSheet(QString::fromUtf8(""));
         frame_4->setFrameShape(QFrame::StyledPanel);
         frame_4->setFrameShadow(QFrame::Raised);
         horizontalLayout = new QHBoxLayout(frame_4);
-        horizontalLayout->setSpacing(2);
+        horizontalLayout->setSpacing(5);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -171,7 +170,8 @@ public:
         font1.setFamilies({QString::fromUtf8("Segoe UI Semibold")});
         font1.setBold(true);
         te_entryDisplay->setFont(font1);
-        te_entryDisplay->setStyleSheet(QString::fromUtf8("background-color: rgb(122, 122, 122);"));
+        te_entryDisplay->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgb(0, 0, 0);"));
 
         verticalLayout_4->addWidget(te_entryDisplay);
 

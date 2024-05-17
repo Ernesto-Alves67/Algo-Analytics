@@ -32,8 +32,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-}
-///
 /// ------------------------- Mensagem de Alerta ao Usuario
 void MainWindow::msgbx_Information(QString _title, QString _text )
 {
@@ -207,7 +205,7 @@ void MainWindow::btn_deletar2Clicked()
             status_delete += ">> 1 Lista Removida |";
         }
         /// Verifica se há arvore criada.
-        it = estruturas.find(TREE);
+        it = estruturas.find(MainWindow::TREE);
         if (it != estruturas.end() && !arvores.empty() && tipoEstrutura == 1) {
             int qtd = stoi(estruturas[MainWindow::TREE]);
             qtd -= 1;

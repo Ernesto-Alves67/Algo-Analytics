@@ -26,7 +26,6 @@ public:
     std::vector<Grafo> grafos;
     std::vector<TreeNode> arvores;
     /// ------------------ utils
-    int geraRandomNum();
     void msgbx_Information(QString _title, QString _text );
     /// botoes
     void btn_geraListaClicked();

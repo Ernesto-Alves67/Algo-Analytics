@@ -3,7 +3,7 @@
 
 #include <QString>
 #include <vector>
-#include<random>
+#include <random>
 #include <iostream>
 #include <queue>
 #include <cstdlib> /// Para a função rand()
@@ -19,7 +19,7 @@ using namespace std;
 const int LIMIT_SR = 10000;
 
 /// Gera numero aleatorio
-int geraRandomNum()
+inline int geraRandomNum()
 {
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -32,23 +32,12 @@ int geraRandomNum()
 inline std::vector<int> gerlista(int tamanho) {
     std::vector<int> lista;
 
-    // Inicializar o gerador de números aleatórios com uma semente adequada
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(1, LIMIT_SR); // Intervalo de números aleatórios de 1 a 100
-
     // Adicionar números aleatórios à lista
     for (int i = 0; i < tamanho; ++i) {
         int item = geraRandomNum();
         auto it = std::find(lista.begin(), lista.end(), item);
-        while(it != lista.end()) {
-            // Item encontrado, ja esta no vetor
-
-        }
-        else{
-            /// item ainda não esta no vetor
-            lista.push_back();
-        }
+        /// TODO: ALgoritmo para colocar itens unicos na lista
+        lista.push_back(item);
     }
 
     return lista;
@@ -178,7 +167,6 @@ public:
 
 };
 
-/// ------------------------------ Definição da estrutura Heap Tree
 class HeapTree{};
 
 #endif // DATASTRUCT_H
